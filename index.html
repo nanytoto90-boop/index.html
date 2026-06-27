@@ -79,8 +79,29 @@
         header p { margin: 10px 0 0; font-size: 1.1rem; opacity: 0.85; }
         .container { max-width: 900px; margin: 30px auto; padding: 25px; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.03); }
         
-        .btn-call { display: block; background-color: #25D366; color: white; text-align: center; padding: 16px; border-radius: 8px; font-size: 1.3rem; font-weight: bold; text-decoration: none; margin: 25px 0; box-shadow: 0 4px 12px rgba(37, 211, 102, 0.35); transition: 0.3s ease; }
-        .btn-call:hover { transform: translateY(-2px); box-shadow: 0 6px 15px rgba(37, 211, 102, 0.45); }
+        .btn-call { 
+    display: block; 
+    background-color: #25D366; 
+    color: white; 
+    text-align: center; 
+    padding: 16px; 
+    border-radius: 8px; 
+    font-size: 1.3rem; 
+    font-weight: bold; 
+    text-decoration: none; 
+    margin: 25px 0; 
+    /* تم استبدال الظل الأخضر المشع بظل رمادي ناعم جداً ومريح للعين */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); 
+    /* إضافة حدود خفيفة جداً بلون أخضر داكن لفصل الزر عن الخلفية البيضاء ومنع الزغللة */
+    border: 1px solid #1ebd56;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease; 
+}
+.btn-call:hover { 
+    /* جعل الزر ثابتاً بدون حركة الارتفاع المزعجة للأعلى (translateY) */
+    background-color: #20ba5a; /* تغميق اللون الأخضر بنسبة بسيطة جداً عند مرور الماوس لتأثير هادئ */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12); 
+}
+
         
         h2 { color: #1e3a8a; border-bottom: 3px solid #3b82f6; padding-bottom: 8px; font-size: 1.6rem; margin-top: 35px; }
         
