@@ -3,59 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>شراء الأثاث المستعمل بالمنصورة - زين</title>
+    <title>زين لشراء الأثاث المستعمل بالمنصورة</title>
+    <!-- الفافيكون (أيقونة المتصفح العلوية) -->
+    <link rel="icon" type="image/png" href="https://icons8.com">
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f6f9; color: #333; margin: 0; padding: 0; line-height: 1.6; }
-        header { background: linear-gradient(135deg, #2c3e50, #3498db); color: white; padding: 40px 20px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        header h1 { margin: 0; font-size: 2.5rem; }
-        header p { margin: 10px 0 0; font-size: 1.2rem; opacity: 0.9; }
-        .container { max-width: 800px; margin: 30px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-        .btn-call { display: block; background-color: #e74c3c; color: white; text-align: center; padding: 15px; border-radius: 5px; font-size: 1.4rem; font-weight: bold; text-decoration: none; margin: 20px 0; box-shadow: 0 4px 6px rgba(231, 76, 60, 0.3); transition: 0.3s; }
-        .btn-call:hover { background-color: #c0392b; }
-        h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 8px; }
-        ul, ol { padding-right: 20px; }
-        li { margin-bottom: 10px; font-size: 1.1rem; }
-        footer { text-align: center; padding: 20px; color: #7f8c8d; font-size: 0.9rem; margin-top: 40px; border-top: 1px solid #e0e0e0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f8fafc; color: #1e293b; margin: 0; padding: 0; line-height: 1.6; }
+        header { background: linear-gradient(135deg, #0f172a, #1e3a8a); color: white; padding: 50px 20px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.08); }
+        .logo-container { margin-bottom: 15px; }
+        .logo-icon { width: 80px; height: 80px; background: white; padding: 10px; border-radius: 50%; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        header h1 { margin: 10px 0 0; font-size: 2.3rem; font-weight: 700; }
+        header p { margin: 10px 0 0; font-size: 1.1rem; opacity: 0.85; }
+        .container { max-width: 900px; margin: 30px auto; padding: 25px; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.03); }
+        .btn-call { display: block; background-color: #25D366; color: white; text-align: center; padding: 16px; border-radius: 8px; font-size: 1.3rem; font-weight: bold; text-decoration: none; margin: 25px 0; box-shadow: 0 4px 12px rgba(37, 211, 102, 0.35); transition: 0.3s ease; }
+        .btn-call:hover { transform: translateY(-2px); box-shadow: 0 6px 15px rgba(37, 211, 102, 0.45); }
+        h2 { color: #1e3a8a; border-bottom: 3px solid #3b82f6; padding-bottom: 8px; font-size: 1.6rem; margin-top: 35px; }
+        li { margin-bottom: 12px; font-size: 1.05rem; }
+        
+        /* معرض الصور الاحترافي */
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-top: 20px; }
+        .gallery-item { position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); height: 180px; }
+        .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: 0.4s ease; }
+        .gallery-item:hover img { transform: scale(1.08); }
+        .gallery-caption { position: absolute; bottom: 0; right: 0; left: 0; background: rgba(15, 23, 42, 0.75); color: white; padding: 8px; text-align: center; font-size: 0.9rem; }
+        
+        footer { text-align: center; padding: 25px; color: #64748b; font-size: 0.95rem; margin-top: 5px; border-top: 1px solid #e2e8f0; }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>🛋️ زين لشراء الأثاث المستعمل بالمنصورة</h1>
+    <div class="logo-container">
+        <!-- الشعار الاحترافي للموقع -->
+        <img class="logo-icon" src="https://icons8.com" alt="شعار زين للأثاث">
+    </div>
+    <h1>🛋️ زين لشراء الأثاث المستعمل وعفش الشقق</h1>
     <p>الخيار الأول والأوثق لتجارة العفش والأجهزة بالمنصورة وضواحيها</p>
 </header>
 
 <div class="container">
-    <p>إذا كنت تبحث عن التقدير المالي العادل لقيمة أثاثك وعفش منزلك المستعمل، فأنت في المكان الصحيح. نحن نتميز بتقديم خدمات سريعة وموثوقة لشراء الأثاث المستعمل في مدينة المنصورة والمناطق المجاورة بأعلى الأسعار المنافسة في السوق.</p>
+    <p>إذا كنت تبحث عن التقدير المالي العادل لقيمة أثاثك وعفش منزلك المستعمل، فأنت في المكان الصحيح. نحن نتميز بتقديم خدمات سريعة وموثوقة لشراء الأثاث المستعمل في مدينة المنصورة والمناطق المجاورة بأعلى الأسعار المنافسة في السوق وبأمانة تامة.</p>
     
-  <a href="https://wa.me/201011062415" target="_blank" class="btn-call" style="background-color: #25D366; box-shadow: 0 4px 6px rgba(37, 211, 102, 0.3);">💬 تواصل معنا عبر واتساب: 01011062415</a>
+    <!-- رابط الواتساب المباشر القياسي والشغال 100% -->
+    <a href="https://wa.me" target="_blank" class="btn-call">💬 اضغط هنا للتواصل عبر واتساب: 01011062415</a>
 
-
-    <h2>What We Buy / ما الذي نقوم بشرائه؟</h2>
+    <h2>📦 ما الذي نقوم بشرائه؟</h2>
     <ul>
-        <li><strong>غرف النوم الكاملة:</strong> مودرن وكلاسيك، غرف الأطفال، الدواليب، والسرائر.</li>
-        <li><strong>الصالونات والأنتريهات:</strong> أطقم الاستقبال المذهبة، الركنات، والمجالس الفاخرة.</li>
-        <li><strong>غرف السفرة:</strong> طاولات الطعام، النيش، والبوفيهات الكاملة.</li>
-        <li><strong>المطابخ والأجهزة:</strong> مطابخ ألومنيال وخشب، ثلاجات، غسالات، وشاشات تلفزيون.</li>
-        <li><strong>أثاث الشركات والمطاعم:</strong> مكاتب، كراسي، تجهيزات مطاعم، ومكيفات هواء.</li>
+        <li><strong>غرف النوم الكاملة:</strong> غرف النوم الرئيسية، المودرن، الكلاسيك، وغرف الأطفال والدواليب.</li>
+        <li><strong>الصالونات والأنتريهات:</strong> أطقم الاستقبال الفاخرة، الركنات، والمجالس العربية بجميع حالاتها.</li>
+        <li><strong>غرف السفرة:</strong> طاولات الطعام الملحقة، النيش، والبوفيهات الخشبية كاملة.</li>
+        <li><strong>الأجهزة الكهربائية:</strong> الشاشات، الثلاجات، الغسالات، التكييفات (الشغالة والمعطلة)، ومطابخ الألومنيال.</li>
     </ul>
 
-    <h2>Why Choose Us / لماذا تختار خدمات زين؟</h2>
+    <h2>🖼️ معرض الصور (أنواع الأثاث التي نشتريها)</h2>
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <img src="https://unsplash.com" alt="غرف نوم">
+            <div class="gallery-caption">غرف نوم رئيسية وأطفال</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://unsplash.com" alt="أنتريهات وصالونات">
+            <div class="gallery-caption">صالونات، أنتريهات وركنات</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://unsplash.com" alt="أجهزة كهربائية">
+            <div class="gallery-caption">شاشات وأجهزة كهربائية تكييفات</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://unsplash.com" alt="غرف سفرة وطاولات">
+            <div class="gallery-caption">غرف سفرة ونيش ومطابخ</div>
+        </div>
+    </div>
+
+    <h2>⭐ لماذا تختار خدمات زين؟</h2>
     <ol>
-        <li><strong>أفضل تقييم مالي:</strong> نضمن لك أسعاراً عادلة توازي القيمة الفعلية لأثاثك دون بخس في الثمن.</li>
-        <li><strong>فريق نقل وفك متخصص:</strong> نتحمل عنك عبء فك العفش وتحميله بواسطة عمالة وفنيين محترفين دون إحداث فوضى.</li>
-        <li><strong>الدفع كاش وفوري:</strong> يتم تسليم المبلغ المتفق عليه نقداً بالكامل في نفس وقت المعاينة وقبل بدء التحميل.</li>
-        <li><strong>سرعة الاستجابة:</strong> نصلك في أي مكان داخل المنصورة والمناطق المحيطة بها فور الاتصال بنا وتحديد الموعد.</li>
+        <li><strong>أعلى تقييم مالي كاش:</strong> نمنحك القيمة الفعلية والعادلة لأثاثك دون أي بخس للأسعار.</li>
+        <li><strong>عمالة وفنيين للفك:</strong> نتحمل كافة أعمال فك غرف النوم والتكييفات ونقلها باحترافية تامة.</li>
+        <li><strong>سرعة غير محدودة:</strong> بمجرد الاتفاق، نتوجه إليك فوراً بسيارات النقل لإنهاء العمل كاش.</li>
     </ol>
 
-    <h2>📍 مناطق الخدمة:</h2>
-    <p>المنصورة - طلخا - شارع قناة السويس - وكافة القرى والضواحي المجاورة.</p>
+    <h2>📍 مناطق تواجدنا الفوري:</h2>
+    <p>المنصورة (شارع قناة السويس، المشاية، الجامعة، جديلة، توريل) - طلخا - وكافة المراكز المجاورة بالدقهلية.</p>
 </div>
 
 <footer>
-    &copy; 2026 زين لشراء الأثاث المستعمل. جميع الحقوق محفوظة.
+    &copy; 2026 زين لشراء الأثاث المستعمل بالمنصورة. جميع الحقوق محفوظة.
 </footer>
 
 </body>
 </html>
-
