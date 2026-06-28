@@ -121,6 +121,23 @@
          /* تنسيق الروابط النصية */
         .blog-card a { color: #3b82f6; text-decoration: underline; font-weight: 600; }
         .blog-card a:hover { color: #1e3a8a; }
+        /* Success Stories Section */
+        section { padding: 80px 20px; max-width: 1100px; margin: 0 auto; }
+        .section-title { text-align: center; margin-bottom: 50px; }
+        .section-title h2 { font-size: 2.2rem; color: var(--dream-purple); margin-bottom: 15px; }
+
+        .stories-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+        .story-card { background: white; padding: 40px; border-radius: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); position: relative; overflow: hidden; }
+        .story-card::before { content: "“"; position: absolute; top: -10px; right: 20px; font-size: 8rem; color: #eee; font-family: serif; z-index: 0; }
+        .story-content { position: relative; z-index: 1; }
+        .story-tag { background: var(--dream-purple); color: white; padding: 4px 12px; border-radius: 5px; font-size: 0.8rem; margin-bottom: 15px; display: inline-block; }
+        .story-card h3 { color: var(--dream-purple); margin-bottom: 15px; }
+         /* Benefits */
+        .benefits-light { background: white; padding: 60px 0; }
+        .benefits-list { display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; }
+        .benefit-item { text-align: center; width: 200px; }
+        .benefit-item span { font-size: 3rem; display: block; margin-bottom: 10px; }   
+        
         footer { text-align: center; padding: 25px; color: #64748b; font-size: 0.95rem; margin-top: 40px; border-top: 1px solid #e2e8f0; }
     </style>
 </head>
@@ -329,6 +346,82 @@
         video.play();
     }
 </script>
+    <section id="stories">
+        <div class="section-title">
+            <h2>قصص نجاح من قلب المنصورة 🏘️</h2>
+            <p>اكتشف كيف ساعدنا جيرانك في تحويل أثاثهم لفرص حقيقية [1].</p>
+        </div>
+        
+        <div class="stories-grid">
+            <!-- قصة المولود الجديد -->
+            <div class="story-card">
+                <div class="story-content">
+                    <span class="story-tag">بداية جديدة</span>
+                    <h3>قصة "أحمد وسارة" والمولود الأول</h3>
+                    <p>باعوا غرفة نومهم القديمة التي كانت تضيق بها الشقة، واستخدموا المال كمقدم لشراء كافة مستلزمات طفلهم الأول بأفضل جودة. لقد كنا جزءاً من فرحتهم .</p>
+                </div>
+            </div>
+
+            <!-- قصة رحلة العمرة -->
+            <div class="story-card">
+                <div class="story-content">
+                    <span class="story-tag">تحقيق حلم</span>
+                    <h3>قصة "الحاجة فاطمة" ورحلة العمرة</h3>
+                    <p>بعد كبر أبنائها وسفرهم، قررت بيع غرف أطفالهم التي لم تعد تُستخدم. بفضل أعلى سعر قدمناه، تمكنت من حجز رحلة عمرة كانت تحلم بها لسنوات .</p>
+                </div>
+            </div>
+
+            <!-- قصة الانتقال -->
+            <div class="story-card">
+                <div class="story-content">
+                    <span class="story-tag">خطوة للمستقبل</span>
+                    <h3>قصة "شاب" وبداية شقة العمر</h3>
+                    <p>باع أثاثه القديم بالكامل لينتقل من شقة إيجار إلى شقته الجديدة. المال الذي حصل عليه ساعده في تأثيث منزله الجديد بموديلات عصرية .</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="benefits-light">
+        <section>
+            <div class="section-title">
+                <h2>لماذا معرض زين هو شريك أحلامك؟</h2>
+            </div>
+            <div class="benefits-list">
+                <div class="benefit-item"><span>💰</span><strong>أعلى سعر كاش</strong> لضمان تمويل حلمك .</div>
+                <div class="benefit-item"><span>🤝</span><strong>مصداقية تامة</strong> بإدارة أ/ مصطفى المصري .</div>
+                <div class="benefit-item"><span>🚚</span><strong>فك ونقل مجاني</strong> لنوفر عليك كل مجهود .</div>
+                <div class="benefit-item"><span>⚡</span><strong>تنفيذ فوري</strong> لأن أحلامك لا تحتمل التأجيل .</div>
+            </div>
+        </section>
+    </div>
+
+    <section id="how-to">
+        <div class="section-title">
+            <h2>كيف تبدأ فصلك الجديد في 3 خطوات؟</h2>
+        </div>
+        <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+            <p><strong>1. صوّر وأرسل:</strong> أرسل صور أثاثك عبر الواتساب 01062139246 .</p>
+            <p><strong>2. التقييم العادل:</strong> نصلك في المنصورة لنعطيك القيمة الحقيقية التي تستحقها .</p>
+            <p><strong>3. استلم الكاش:</strong> استلم أموالك فوراً وابدأ في تحقيق حلمك القادم .</p>
+        </div>
+    </section>
+
+    <section id="faq">
+        <div class="section-title">
+            <h2>أسئلة شائعة حول تمويل الأحلام</h2>
+        </div>
+        <div style="background: white; padding: 30px; border-radius: 15px;">
+            <p><strong>س1: هل السعر الذي تقدمونه يكفي فعلاً للبدء في مشروع أو شراء غرض جديد؟</strong><br>
+            ج: نعم، لأننا نعتمد "ضمان أعلى سعر" في المنصورة، ونقدر قيمة خشب الزان والأرو بدقة، مما يوفر لك سيولة مالية مجزية .</p>
+            <br>
+            <p><strong>س2: هل تشترون الأثاث من كافة أحياء المنصورة؟</strong><br>
+            ج: نعم، نصلك في أي مكان بالمنصورة لنوفر عليك عناء البحث والنقل، ونقوم بالدفع كاش فوراً .</p>
+            <br>
+            <p><strong>س3: لو هتبيع غرفة نومك القديمة النهاردة، إيه أول حاجة هتشتريها؟</strong><br>
+            ج: فكر في هدفك، ونحن في معرض زين سنساعدك على تحقيقه بأفضل تقييم مالي لأثاثك .</p>
+        </div>
+    </section>
     <h2>⭐ لماذا تختار خدمات كنوز؟</h2>
     <ol>
         <li><strong>أعلى تقييم مالي كاش:</strong> نمنحك القيمة الفعلية والعادلة لأثاثك دون أي بخس للأسعار.</li>
