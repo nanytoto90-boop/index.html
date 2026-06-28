@@ -72,7 +72,31 @@
     }
     </script>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f8fafc; color: #1e293b; margin: 0; padding: 0; line-height: 1.6; }
+        body {
+    /* 1. الخطوط: استبدلتها بـ Cairo لأنه الأفضل للأعمال الاحترافية في مصر */
+    font-family: 'Cairo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    /* 2. الألوان: حافظت على اختياراتك مع لمسة احترافية */
+    background-color: #f8fafc;
+    color: #1e293b;
+    
+    /* 3. القواعد الصارمة للتجاوب (إجبار التوسط ومنع الميل لليمين) */
+    margin: 0;
+    padding: 0;
+    line-height: 1.8; /* الأفضل للخطوط العربية لضمان وضوح الحروف */
+    direction: rtl;   /* لضمان انضباط الاتجاه من اليمين لليسار */
+    width: 100%;      /* إجبار الجسم على أخذ عرض الشاشة فقط */
+    overflow-x: hidden; /* أهم سطر: يمنع أي عنصر هارب من التسبب في ميل الصفحة */
+    
+    /* 4. ضبط السلوك العام */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* سطر إضافي لإجبار جميع العناصر على احترام المساحة المحددة */
+* {
+    box-sizing: border-box;
+}
         header { background: linear-gradient(135deg, #0f172a, #1e3a8a); color: white; padding: 50px 20px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.08); }
         .logo-icon { width: 80px; height: 80px; background: white; padding: 10px; border-radius: 50%; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
         header h1 { margin: 10px 0 0; font-size: 2.3rem; font-weight: 700; }
