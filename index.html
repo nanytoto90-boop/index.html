@@ -158,6 +158,12 @@
         .btn-dream:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
 
         footer { text-align: center; padding: 25px; color: #64748b; font-size: 0.95rem; margin-top: 40px; border-top: 1px solid #e2e8f0; }
+    @media (max-width: 768px) {
+    /* تحويل الشبكات من أعمدة إلى صفوف */
+    .grid-container, .features-grid, .stories-grid {
+        display: block; /* أو grid-template-columns: 1fr; */
+        width: 100%;
+    }
     </style>
 </head>
 <body>
