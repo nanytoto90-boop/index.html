@@ -269,124 +269,81 @@
    </div>
 
     </div>
-<!-- مشغل فيديو معرض زين الاحترافي -->
-<div class="video-section-container">
-    <div class="video-header">
-        <h3>شاهد كيف نحوّل "كركبة" أثاثك إلى "كاش" في دقائق! 🎬</h3>
-        <p>رحلة حقيقية من داخل بيوت عملائنا في المنصورة</p>
+<!-- حاوية الفيديو المتجاوبة لمعرض زين -->
+<div class="video-container-responsive">
+    <div class="video-aspect-ratio">
+        <!-- استبدل pkYepZ-au9Q بمعرف الفيديو الخاص بك -->
+        <iframe 
+            src="https://www.youtube.com/embed/pkYepZ-au9Q?rel=0" 
+            title="فيديو تحول الأثاث لكاش - معرض زين" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
     </div>
-
-    <div class="professional-video-wrapper">
-        <!-- يمكنك استبدال الرابط أدناه برابط فيديو حقيقي من يوتيوب أو ملف MP4 -->
-        <div class="video-overlay">
-            <div class="play-icon" onclick="playZainVideo()">▶</div>
-            <p class="overlay-text">فيديو التحول: مساحة + كاش</p>
-        </div>
-        
-        <video id="zainVideo" poster="https://i.ytimg.com/an_webp/pkYepZ-au9Q/mqdefault_6s.webp?du=3000&sqp=CJyKhNIG&rs=AOn4CLDOz7waeTKSef-dkPZ6FIeZghPfXQ">
-            <source src="https://www.youtube.com/watch?v=pkYepZ-au9Q" type="video/mp4">
-            متصفحك لا يدعم تشغيل الفيديو.
-        </video>
-    </div>
-
-    <!-- زر التحويل الفوري بعد المشاهدة -->
-    <div class="video-cta">
-        <a href="https://wa.me/201062139246" class="wa-video-btn">
-            💬 ابدأ تجربتك الخاصة وأرسل صورك الآن
-        </a>
-        <p class="phone-under-video">أو اتصل مباشرة: <strong>01062139246</strong></p>
+    <div class="video-caption">
+        <p>شاهد كيف يقيّم <strong>أ/ مصطفى المصري</strong> أثاثك بأعلى سعر [13، 17]</p>
+        <a href="tel:01011062415" class="video-call-btn">اتصل الآن: 01011062415</a>
     </div>
 </div>
 
 <style>
-    .video-section-container {
-        max-width: 850px;
-        margin: 40px auto;
-        padding: 20px;
-        background: #fff;
-        border-radius: 15px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        text-align: center;
+    /* التنسيق البرمجي لضمان التجاوب ومنع الميل لليمين */
+    .video-container-responsive {
+        width: 100%;
+        max-width: 800px; /* العرض الأقصى على الكمبيوتر */
+        margin: 20px auto;
+        padding: 10px;
+        box-sizing: border-box;
     }
 
-    .video-header h3 { color: #2c3e50; font-size: 1.6rem; margin-bottom: 10px; }
-    .video-header p { color: #666; margin-bottom: 25px; }
-
-    .professional-video-wrapper {
+    .video-aspect-ratio {
         position: relative;
         width: 100%;
-        padding-top: 56.25%; /* نسبة 16:9 */
+        height: 0;
+        padding-bottom: 56.25%; /* نسبة 16:9 الاحترافية */
         background: #000;
         border-radius: 12px;
         overflow: hidden;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     }
 
-    .professional-video-wrapper video {
+    .video-aspect-ratio iframe {
         position: absolute;
-        top: 0; left: 0; width: 100%; height: 100%;
-        object-fit: cover;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
     }
 
-    /* واجهة الفيديو الجذابة */
-    .video-overlay {
-        position: absolute;
-        top: 0; left: 0; width: 100%; height: 100%;
-        background: rgba(0,0,0,0.4);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        z-index: 2;
-        cursor: pointer;
-        transition: 0.3s;
+    .video-caption {
+        text-align: center;
+        margin-top: 15px;
     }
 
-    .video-overlay:hover { background: rgba(0,0,0,0.2); }
-
-    .play-icon {
-        width: 80px; height: 80px;
-        background: #f39c12; /* لون الذهب من الهوية */
+    .video-call-btn {
+        display: inline-block;
+        margin-top: 10px;
+        background-color: #25d366;
         color: white;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 30px;
-        margin-bottom: 15px;
-        box-shadow: 0 0 20px rgba(243, 156, 18, 0.6);
-        animation: pulse-gold 2s infinite;
-    }
-
-    @keyframes pulse-gold {
-        0% { transform: scale(1); }
-        50% { transform: scale(1.1); }
-        100% { transform: scale(1); }
-    }
-
-    .overlay-text { color: white; font-weight: bold; font-size: 1.2rem; text-shadow: 1px 1px 5px rgba(0,0,0,0.5); }
-
-    /* أزرار أسفل الفيديو */
-    .video-cta { margin-top: 25px; }
-    .wa-video-btn {
-        background: #25d366;
-        color: white;
-        padding: 15px 30px;
+        padding: 12px 25px;
         border-radius: 50px;
         text-decoration: none;
         font-weight: bold;
-        display: inline-block;
-        font-size: 1.1rem;
         transition: 0.3s;
     }
-    .wa-video-btn:hover { background: #128c7e; transform: scale(1.05); }
-    .phone-under-video { margin-top: 15px; font-size: 0.9rem; color: #888; }
 
+    /* إجبار التوسيط في الشاشات الصغيرة */
     @media (max-width: 600px) {
-        .video-header h3 { font-size: 1.3rem; }
-        .play-icon { width: 60px; height: 60px; font-size: 20px; }
+        .video-container-responsive {
+            padding: 5px;
+        }
+        .video-caption p {
+            font-size: 0.9rem;
+        }
     }
 </style>
-
 <script>
     function playZainVideo() {
         var video = document.getElementById("zainVideo");
